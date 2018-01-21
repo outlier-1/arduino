@@ -23,7 +23,7 @@ void setup() {
 }
 
 void loop(){
-  sound_perceived = analogToDigital(analogRead(soundSensor), 300);
+  sound_perceived = analogToDigital(analogRead(soundSensor), 500);
   
   if(sound_perceived){
     // Check the sound for it is clap or not.
@@ -93,7 +93,7 @@ void check_rhythm(int whistle_counter){
       }
       break;
     case 2:
-      if( (millis() - control_time > 0) && (millis() - control_time < 1400) ){
+      if( (millis() - control_time > 1000) && (millis() - control_time < 1800) ){
         Serial.println("Third Whistle Founded!"); // FOR DEBUG
         whistle_count+=1;
       }
