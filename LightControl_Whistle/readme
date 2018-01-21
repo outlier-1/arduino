@@ -1,0 +1,3 @@
+This application turn on/off lights according to your whistle rhythm. 
+It requires 3 whistles in certain rhythm to turn on/off lights.
+Rhythm is 1 Whistle, wait 1 - 1.8 seconds, and 2 more whistles repeatedly in 400ms.
